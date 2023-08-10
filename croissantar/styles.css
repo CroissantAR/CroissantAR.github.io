@@ -1,0 +1,37 @@
+/* styles.css */
+
+/* CSS for the popup */
+.popup {
+    display: flex ;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+/* Set global RTL styles */
+html, body {
+    direction: rtl;
+}
+
+/* Adjust header layout for RTL */
+header {
+    text-align: right;
+}
+
+/* Adjust navigation links alignment for RTL */
+nav {
+    float: right;
+}
+
+/* Adjust gallery items layout for RTL */
+.gallery-item {
+    float: right;
+}
+
+/* Adjust footer alignment for RTL */
+footer {
+    text-align: right;
+}
