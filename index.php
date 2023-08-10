@@ -1,0 +1,66 @@
+<?php
+session_start(); // Ensure session is started
+//session_destroy();
+// Check if $_SESSION['cart'] is set, if not, initialize it with an empty array
+if (!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = array();
+}
+?>
+
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <title>كروسان الرضوان- الصفحة الرئيسية</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+<!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.php">كروسان الرضوان</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.php">المنتوجات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php">الإتصال بنا</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="cart.php">الطلبية</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>مرحبًا بك في موقعنا</h1>
+                <p>نقدم لك منتجات طازجة ولذيذة تحضّر بأفضل المكونات.</p>
+            </div>
+        </div>
+    </div>
+<!-- Bootstrap Footer -->
+<footer class="bg-dark text-white mt-4 py-3">
+    <div class="container text-center">
+        <p>&copy; <?php echo date("Y"); ?> كروسان الرضوان - برج حمود، النبعة</p>
+    </div>
+</footer>
+</body>
+</html>
+
+
+
+
